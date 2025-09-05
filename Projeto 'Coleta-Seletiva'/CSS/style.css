@@ -54,25 +54,27 @@ body {
   padding-top: 80px;
 }
 
-#carrosel {
-  background: url("img/banner.jpg") center/cover no-repeat;
+#carrosel{
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(47, 35, 35);
   text-align: center;
-  padding: 20px;
 }
 
 #carrosel h1 {
   font-size: 3rem;
   margin-bottom: 15px;
+  position: relative;
+  padding: 20px;
 }
 
 #carrosel p {
-  max-width: 700px;
+  max-width: 100%;
   font-size: 1.2rem;
+  position: relative;
+  padding: 20px;
 }
 
 
@@ -205,4 +207,24 @@ footer {
 
 footer p {
   margin: 5px 0;
+}
+
+.carrosel-home{
+  height: 400px;
+}
+
+img{
+  height: 400px;
+  width: 1250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.imgs{
+  position: absolute;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
 }
