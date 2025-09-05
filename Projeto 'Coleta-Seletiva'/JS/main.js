@@ -14,6 +14,6 @@ function carrossel(){
 setInterval(carrossel, 1000);
 
 function MudaTela (){
-    window.location.href = "../paginaPontos"
+    window.location.href = "PgPontos.html"
 }
 
