@@ -32,6 +32,7 @@ body {
 .container {
 	width: 80%;
 	margin: 0 auto;
+  
 }
 
 header::after {
@@ -274,3 +275,8 @@ img{
   height: 100vh;
   width: 100vw;
 }
+
+
+
+
+
