@@ -8,7 +8,7 @@ function carrossel(){
     if(idex > img.length -1){
         idex = 0;
     }
-    imgs.style.transform = `translateX(${-idex * 100}vw)`;
+    imgs.style.transform = `translateX(${-idex * 100}%)`;
 }
 
 setInterval(carrossel, 4000);
