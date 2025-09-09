@@ -376,3 +376,15 @@ details p {
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.pc{
+  text-align: center;
+  margin: 20px;
+  color: #2e7d32;
+}
+
+.pc1{
+  text-align: center;
+  margin: 0 20px 20px 20px;
+  color: #555;
+}
