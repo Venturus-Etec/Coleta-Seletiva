@@ -1,3 +1,4 @@
+
 const imgs = document.getElementById('img1');
 const img = document.querySelectorAll('#img1 img');
 
@@ -103,6 +104,27 @@ function Mostrarmap() {
     );
   } else {
     alert("Geolocalização não suportada pelo navegador.");
+  }
+}
+// banco de dados
+
+const supabaseUrl = "https://ogcwsmitjzdgarnejvrb.supabase.co";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9nY3dzbWl0anpkZ2FybmVqdnJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc0NzU5NjAsImV4cCI6MjA3MzA1MTk2MH0.TgDNmUC3_nP2xqW-xoKq-6oEzLSqM8RZlYRfqel3RFI";
+const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+async function Cadastrar() {
+  let nome = document.getElementById("nome").value;
+  let cpf = document.getElementById("cpf").value;
+  let senha = document.getElementById("senha").value;
+
+  const { data, error } = await supabase
+    .from("cadastro")
+    .insert([{ cpf: cpf, nome: nome, senha: senha }]);
+
+  if (error) {
+    alert("Erro: " + error.message);
+  } else {
+    alert("Cadastrado com sucesso!");
   }
 }
 
