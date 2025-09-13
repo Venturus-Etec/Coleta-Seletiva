@@ -33,7 +33,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="incentivoverde.html">Incentivo Verde</a></li>
           <li><a href="ajuda.html">Ajuda</a></li>
-          <li><a href="#">Pontos</a></li>
+          <li><a href="#">Pontos de coleta</a></li>
            <li><a href="quemsomos.html">Quem somos</a></li>
         </ul>
       </nav>
@@ -42,13 +42,32 @@
         </div>
   
         <h1 class="pc">Pontos de coleta próximo a você</h1>
+        <p class="pc1">Lembrando que para uma melhor orientaçäo do GPS o uso do celular é fundamental</p>
         <button id="map" onclick="Mostrarmap()">Mostrar mapa</button>
         <h1 class="pc">Beta:</h1>
         <p class="pc1">Estamos super empolgados em ter você por aqui. Nosso site ainda está na fase Beta, o que significa que estamos trabalhando duro para expandir e melhorar. Por enquanto, o número de pontos de coleta pode ser limitado, mas estamos adicionando novos locais e recursos constantemente.</p>
 
+        <h1 class="pc">Cheguei em um ponto de coleta</h1>
+        <p class="pc1">Agradecemos sua colaboração com o descarte correto de resíduos. Por favor, utilize a lixeira correspondente ao material para que um código seja emitido, permitindo o resgate de seus pontos. <a href="#" id="abrirPopupLink">Clique aqui para ganhar os Pontos.</a></p>
+
+        <div id="meuPopup" class="popup-container">
+          <div class="popup-content">
+            <span class="fechar-popup" id="fecharPopupBtn">&times;</span>
+            <h2>Pontos</h2>
+            <p class="pc1">Para ganhar <strong>1000</strong> pontos escreva o codigo abaixo:</p>
+            <label for="Codigo">Codigo:</label>
+            <input type="text" id="Codigo" name="Codigo" placeholder="Digite o codigo">
+            <button id="GanharP">Receber</button>
+            <p id="mensagemErro"></p>
+          </div>
+        </div>
+
           <footer>
         &copy;Grupo
-        <p>integrantes do grupo</p>
+        <p>Lucas Henrique Rodrigues Camargo</p>
+        <p>Maria Fernanda Kondo Delpino</p>
+        <p>Otávio Henrique Alves da Costa</p>
+        <p>Matheus Henrique Pereira de Souza </p>
         <p>04/11/2025</p>
     </footer>
     </body>
