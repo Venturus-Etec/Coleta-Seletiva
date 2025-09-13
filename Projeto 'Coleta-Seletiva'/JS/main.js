@@ -147,11 +147,9 @@ function atualizarInterface(logado, nome = null, email = null, pontos = null) {
             bemVindo.style.display = 'block';
             if (nomeUsuario && nome) nomeUsuario.textContent = nome;
             
-            // Lógica para exibir o email
             const emailUsuario = document.getElementById('email-usuario');
             if (emailUsuario && email) emailUsuario.textContent = email;
             
-            // Lógica para exibir os pontos que você tinha
             if (pontosUsuario && pontos !== null) pontosUsuario.textContent = pontos;
         }
     } else {
@@ -267,7 +265,6 @@ function verificarStatusLogin() {
     .then(response => response.json())
     .then(data => {
         if (data.logado) {
-            // Agora, a chamada da função tem QUATRO argumentos, igual à outra chamada.
             atualizarInterface(true, data.nome, data.email, data.pontos);
         } else {
             localStorage.removeItem('userToken');
@@ -304,7 +301,6 @@ abrirPopupLink.addEventListener('click', (e) => {
     meuPopup.classList.add('mostrar');
 });
 
-// Lógica de Ganhar Pontos Corrigida e Implementada
 GanharP.addEventListener('click', () => {
     const codigo = meuInput.value.trim();
     if (codigo === '') {
@@ -366,7 +362,6 @@ function atualizarInterface(logado, nome = null, email = null, pontos = null) {
 
   if (pontosUsuario && pontos !== null) pontosUsuario.textContent = pontos;
 
-            // NOVA LÓGICA DO BOTÃO AQUI DENTRO
             const botaoSacar = document.getElementById('sacar');
             const mensagemSacar = document.getElementById('mensagemsacar');
 
