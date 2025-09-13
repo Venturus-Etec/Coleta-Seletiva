@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta Seletiva</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="IMG/Favicoon.png" type="image/x-icon">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="JS/main.js" defer></script>
+</head>
+<body>
+    <div class="main-menu">
+        <div class="nav">
+            <img class="logo" src="IMG/Favicoon.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="incentivoverde.html">Incentivo Verde</a></li>
+                    <li><a href="ajuda.html">Ajuda</a></li>
+                    <li><a href="PgPontos.html">Pontos de coleta</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                </ul>
+            </nav>
+            <li><a class="btn" href="cadastro.html"><img src="IMG/acount.png"></a></li>
+        </div>            
+    </div>
+
+
+        <div id="carrosel" class="home">
+            <div class="carrosel-home">
+                <div class="imgs" id="img1">
+                    <img src="IMG/ChatGPT Image 9 de set. de 2025, 02_40_34.png" alt="">
+                    <img src="IMG/Ia.png" alt="">
+                    <img src="IMG/carrosel-grafite.png" alt="">
+                </div>
+                <h1>Coleta seletiva</h1>
+                <p>🪴 - Inspirando e promovendo ações que fazem a diferença todos os dias.</p>
+            </div>
+        </div>
+    </div>
+
+     <div class="acessibilidade">
+            <button id="aumentar">A+</button>
+            <button id="diminuir">A-</button>
+            <button id="dark">preto</button>
+        </div>
+
+        <div id="preset-color">
+        <span>Filtro de Daltonismo</span>
+        <select class="daltonismo" name="preset_color">
+            <option id="opt1" selected value="">Cores Padrão</option>
+            <option id="opt2" value="">Acromatopsia</option>
+            <option id="opt4" value="">Deuteranomalia</option>
+            <option id="opt5" value="">Deuteranopia</option>
+            <option id="opt6" value="">Protanomalia</option>
+            <option id="opt7" value="">Protanopia</option>
+            <option id="opt8" value="">Tritanomalia</option>
+            <option id="opt9" value="">Tritanopia</option>
+        </select>
+    </div>
+    
+
+    <div class="sobre" id="sobrec">
+        <h1>O que é?</h1>
+     <p>Coleta seletiva é o nome dado ao <strong>processo de separação dos resíduos sólidos urbanos de acordo com o material predominante em sua composição.</strong> A coleta seletiva auxilia na reciclagem do lixo urbano que é produzido diariamente nas residências e nas ruas adiantando uma das principais etapas do processamento do material descartado, já que a sua separação é feita pela fonte geradora (indivíduos, estabelecimentos comerciais, empresas, etc.).</p>
+    </div>
+
+    <div class="tipos">
+        <h2>Tipos</h2>
+        <div class="cards">
+
+            <div class="card">
+            <div class="inner">
+            <div class="front">
+                <img src="IMG/Gemini_Generated_Image_hd4umzhd4umzhd4u-removebg-preview.png" alt="">
+                <h3>Plástico</h3>
+            </div>
+               
+                 <div class="back">
+                <p>O plástico deve ser descartado no coletor vermelho. Quando separado corretamente, pode ser reciclado e transformado em novos produtos, evitando que polua rios, mares e cause riscos à vida animal e humana.</p>
+            </div>
+            </div>
+        </div>
+
+         <div class="card">
+            <div class="inner">
+            <div class="front">
+                <img src="IMG/WhatsApp_Image_2025-09-10_at_00.00.10-removebg-preview.png" alt="">
+                <h3>Papel</h3>
+            </div>
+                <div class="back">
+              
+                <p>O papel deve ser colocado no coletor azul. Só podem ser reciclados papéis limpos e secos, pois materiais engordurados ou sujos inviabilizam a reciclagem. A separação correta ajuda a reduzir o desmatamento e o desperdício.</p>
+            </div>
+            </div>
+         </div>
+
+          <div class="card">
+            <div class="inner">
+                <div class="front">
+                    <img src="IMG/WhatsApp_Image_2025-09-10_at_00.11.10-removebg-preview.png" alt="">
+                    <h3>Vidro</h3>
+                </div>
+                    
+
+                <div class="back">
+                    <p>O vidro vai no coletor verde. Deve ser descartado com cuidado, de preferência embalado, para evitar acidentes. É um material 100% reciclável e pode ser reaproveitado diversas vezes sem perder qualidade.</p>
+                </div>
+            </div>
+    </div>
+
+
+           <div class="card">
+              <div class="inner">
+              <div class="front">
+                <img src="IMG/WhatsApp_Image_2025-09-10_at_00.11.06-removebg-preview.png" alt="">
+                <h3>Metal</h3>
+            </div>
+               
+                 <div class="back">
+                <p>O metal é descartado no coletor amarelo. Esse material tem alto valor de reciclagem e pode ser reaproveitado inúmeras vezes. A coleta correta contribui para a economia de energia e preservação de recursos naturais</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="content">
+        <h1>Funcionamento</h1>
+        <p>A coleta seletiva funciona por meio do descarte dos resíduos em recipientes específicos, identificados por cores padronizadas. Cada cor corresponde a um tipo de material: azul para papel, vermelho para plástico, verde para vidro, amarelo para metal, marrom para orgânicos e cinza para rejeitos. Essa separação garante que cada resíduo siga para o destino adequado, permitindo a reciclagem, o reaproveitamento ou o descarte seguro.</p>
+        <p>O processo pode ser realizado tanto pelas equipes de limpeza urbana quanto pelos colaboradores dentro da própria empresa. A participação consciente de todos é essencial, pois evita a contaminação dos materiais, reduz riscos à saúde, diminui a poluição ambiental e assegura maior eficiência no tratamento do lixo.</p>
+        <p>Seguir corretamente esse procedimento não apenas contribui para a sustentabilidade, mas também protege vidas, já que o descarte incorreto de resíduos pode gerar acidentes, contaminações e danos sérios ao meio ambiente e às pessoas.</p>
+    </div>    
+
+    <div class="content">
+        <h1>Incentivo Verde</h1>
+        <p>O <strong>Projeto Incentivo Verde </strong>é uma iniciativa dedicada a promover a coleta seletiva e a conscientização ambiental de maneira prática e acessível. Seu <strong>propósito</strong> é incentivar pessoas, empresas e instituições a adotarem hábitos mais sustentáveis no dia a dia, <b>contribuindo</b> para a redução da poluição e do desperdício de materiais recicláveis. Além disso, o projeto fortalece a valorização de práticas responsáveis, gera impacto positivo para a comunidade e para o planeta e estimula a educação ambiental como ferramenta de transformação social. Acreditamos que pequenas atitudes, quando praticadas de forma contínua, podem construir um <strong>futuro mais limpo, justo e sustentável para todos</strong>.</p>
+    </div>
+
+    <footer>
+        &copy;Grupo
+        <p>Lucas Henrique Rodrigues Camargo</p>
+        <p>Maria Fernanda Kondo Delpino</p>
+        <p>Otávio Henrique Alves da Costa</p>
+        <p>Matheus Henrique Pereira de Souza </p>
+        <p>04/11/2025</p>
+    </footer>
+</body>
+</html>
