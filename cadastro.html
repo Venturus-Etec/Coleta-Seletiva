@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta Seletiva</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="IMG/Favicoon.png" type="image/x-icon">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="JS/main.js" defer></script>
+    <script src="JS/main2.js" defer></script>
+</head>
+<body>
+    <div class="nav">
+            <img class="logo" src="IMG/Favicoon.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="incentivoverde.html">Incentivo Verde</a></li>
+                    <li><a href="ajuda.html">Ajuda</a></li>
+                    <li><a href="PgPontos.html">Pontos de coleta</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="cadastro.html"><img src="IMG/acount.png" class="btn2"></a>
+             <a href="#" class="icon" onclick="btt_navbar()"> &#9776; </a>
+        </div>            
+    </div>
+
+    <div>
+        <a id="menu-acc" href="#"><img src="IMG/menu-acc3.png" id="menu-acc2" alt=""></a>
+    </div>
+    
+    <div id="forms-container" class="participar">
+        <div id="login-form-container">
+            <h1 id="participe">Login</h1>
+            <p>Faça seu login abaixo para acessar o Incentivo Verde.</p>
+            <form id="formLogin">
+                <label for="loginEmail">E-mail:</label>
+                <input type="email" name="email" id="loginEmail" placeholder="@mariasilva@gmail.com">
+                <br>
+
+                <label for="loginSenha">Senha:</label>
+                <input type="password" name="senha" id="loginSenha" placeholder="********">
+                <br>
+
+                <button type="submit" id="LoginBtn">Login</button>
+            </form>
+            <a href="#" id="link-cadastro">Não possui cadastro? Clique aqui.</a>
+        </div>
+
+        <div id="cadastro-form-container" style="display: none;">
+            <h1>Cadastro</h1>
+            <form id="formCadastro">
+                <label for="cadastroNome">Nome:</label>
+                <input type="text" id="cadastroNome" placeholder="José Silva">
+                <label for="cadastroEmail">E-mail:</label>
+                <input type="email" id="cadastroEmail" placeholder="josesilva@gmail.com">
+                <label for="cadastroSenha">Senha:</label>
+                <input type="password" id="cadastroSenha" placeholder="********">
+                <button type="submit" id="CadastroBtn">Cadastrar</button>
+            </form>
+            <a href="#" id="link-login">Já tem cadastro? Clique aqui.</a>
+        </div>
+        
+        <p id="mensagem"></p>
+    </div>
+
+    <div id="bem-vindo" style="display: none;">
+        <h1>Seu acesso foi liberado com sucesso!!</h1>
+        <h2>Informações:</h2>
+        <div class="Info">
+            <h4>Nome:</h4>
+            <span id="nome-usuario"></span>
+            <h4>Email:</h4>
+            <span id="email-usuario"></span>
+            <h4>Pontos</h4>
+            <span id="pontos-usuario"></span>
+            <button id="sacar">sacar</button>
+            <p id="mensagemsacar"></p>
+        </div>
+        <p id="logout">
+            Para <strong>sair</strong> da conta
+        </p>
+        <button id="logout-button">Sair</button>
+    </div>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>🌱 Incentivo Verde</h3>
+      <p>© Grupo 1ºAMS</p>
+      <p>Etec Lins • 04/11/2025</p>
+      <p>Instagram: <a href="https://www.instagram.com/coletaseletiva03?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">coletaseletiva03</a></p>
+      <p>Email: <a href="mailto:coletaseletiva03@gmail.com?subject=Contato&body=">coletaseletiva03@gmail.com</a></p>
+    </div>
+
+    <div class="footer-right">
+      <h4>Integrantes</h4>
+      <ul>
+        <li>Lucas Henrique Rodrigues Camargo</li>
+        <li>Maria Fernanda Kondo Delpino</li>
+        <li>Matheus Henrique Pereira de Souza</li>
+        <li>Otávio Henrique Alves da Costa</li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Incentivar o verde é semear o futuro!</p>
+  </div>
+</footer>
+</body>
+</html>
