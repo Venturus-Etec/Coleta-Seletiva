@@ -1067,6 +1067,10 @@ button{
   display: none;
 }
 
+.clique-part{
+  display: none;
+}
+
 @media (max-width: 1025px) {
   .nav ul {
     flex-direction: column;
@@ -1172,19 +1176,23 @@ button{
   transition: .2s;
 }
 
-#menu-acc img{
-  transition: 0.8s;
-}
+  #menu-acc img{
+    transition: 0.8s;
+  }
 
-#menu-acc :hover{
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  transition: .4s;
-}
+  #menu-acc :hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: .4s;
+  }
 
-#menu-acc img{
-  background-color: transparent 50%;
-  border-radius: 50%;
-}
+  #menu-acc img{
+    background-color: transparent 50%;
+    border-radius: 50%;
+  }
+
+  .clique-part{
+    display: block;
+  }
 
 }
 
@@ -1293,20 +1301,23 @@ button{
   transition: .2s;
 }
 
-#menu-acc img{
-  transition: 0.8s;
-}
+  #menu-acc img{
+    transition: 0.8s;
+  }
 
-#menu-acc :hover{
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  transition: .4s;
-}
+  #menu-acc :hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: .4s;
+  }
 
-#menu-acc img{
-  background-color: transparent 50%;
-  border-radius: 50%;
-}
-
+  #menu-acc img{
+    background-color: transparent 50%;
+    border-radius: 50%;
+  }
+  
+  .clique-part{
+    display: block;
+  }
 }
 
 @media (max-width: 426px) {
@@ -1394,19 +1405,23 @@ button{
   transition: .2s;
 }
 
-#menu-acc img{
-  transition: 0.8s;
-}
+  #menu-acc img{
+    transition: 0.8s;
+  }
 
-#menu-acc :hover{
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  transition: .4s;
-}
+  #menu-acc :hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: .4s;
+  }
 
-#menu-acc img{
-  background-color: transparent 50%;
-  border-radius: 50%;
-}
+  #menu-acc img{
+    background-color: transparent 50%;
+    border-radius: 50%;
+  }
+
+  .clique-part{
+    display: block;
+  }
 
 }
 
@@ -1499,19 +1514,24 @@ button{
   transition: .2s;
 }
 
-#menu-acc img{
-  transition: 0.8s;
-}
+  #menu-acc img{
+    transition: 0.8s;
+  }
 
-#menu-acc :hover{
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  transition: .4s;
-}
+  #menu-acc :hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: .4s;
+  }
 
-#menu-acc img{
-  background-color: transparent 50%;
-  border-radius: 50%;
-}
+  #menu-acc img{
+    background-color: transparent 50%;
+    border-radius: 50%;
+  }
+
+  .clique-part{
+    display: block;
+  }
+
 }
  
 @media (max-width: 320px) {
@@ -1608,18 +1628,23 @@ button{
   transition: .2s;
 }
 
-#menu-acc img{
-  transition: 0.8s;
-}
+  #menu-acc img{
+    transition: 0.8s;
+  }
 
-#menu-acc :hover{
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  transition: .4s;
-}
+  #menu-acc :hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: .4s;
+  }
 
-#menu-acc img{
-  background-color: transparent 50%;
-  border-radius: 50%;
-}
+  #menu-acc img{
+    background-color: transparent 50%;
+    border-radius: 50%;
+  }
+
+  .clique-part{
+    display: block;
+  }
+
 }
 
