@@ -145,7 +145,7 @@ nav li {
 }
 
 nav a {
-  color: var(--background);
+  color: #c1fab8;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -327,7 +327,8 @@ body {
 }
 
 .back {
-  background: var(--backgroundClaro);
+  background: var(--background);
+  color: var(--text);
   transform: rotateY(180deg);
   text-align: center;
 }
@@ -907,7 +908,6 @@ th{
   gap: 50px;      
   flex-wrap: wrap; 
   margin-top: 20px;  
- 
 }
 
 .imgg p{
