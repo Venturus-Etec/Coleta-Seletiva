@@ -18,18 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-themeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-theme');
-
-    if (body.classList.contains('dark-theme')) {
-        localStorage.setItem('theme', 'dark');
-        if (logoPrincipal) {
-            logoPrincipal.src = logoEscuro;
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+    
+        if (body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+            if (logoPrincipal) {
+                logoPrincipal.src = logoEscuro;
+            }
+        } else {
+            localStorage.setItem('theme', 'light');
+            if (logoPrincipal) {
+                logoPrincipal.src = logoClaro;
+            }
         }
-    } else {
-        localStorage.setItem('theme', 'light');
-        if (logoPrincipal) {
-            logoPrincipal.src = logoClaro;
-        }
-    }
-});
+    });
+}

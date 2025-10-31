@@ -43,7 +43,6 @@ function atualizarInterface(logado, nome = null, email = null, pontos = null) {
 
             if (pontosUsuario && pontos !== null) pontosUsuario.textContent = pontos;
 
-            // Lógica do botão de sacar
             const botaoSacar = document.getElementById('sacar');
             const mensagemSacar = document.getElementById('mensagemsacar');
 
