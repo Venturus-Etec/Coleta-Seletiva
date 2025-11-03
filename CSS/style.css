@@ -8,14 +8,17 @@
   --background:white;
   --text: black;
   --verdeEscuroNav: #2e7d32;
+  --verdeTexto: #c1fab8;
   --verdeClaro: #e8f5e9;
   --backgroundClaro: white;
   --backgroundEscuro: #000;
   --backgroundCinzaEscuro:#111111;
   --branco:#dadada;
+  --tabBrnco: #dadada;
   --preto: #000;
-  --cinza: #02020233;
-  --azul:#61c4e233;
+  --cinza: #393939a1;
+  --azul:#61c4e267;
+  --verde: #e8f5e9;
   --vermelho: #eb292933;
   --roxo: #80008033;
   --laranja: #ffa50033;
@@ -29,7 +32,11 @@
   --background: #121212;
   --verdeClaro:#191919;
   --text: #e0e0e0;
-  
+  --tabBranco: #000;
+  --verde: #005e08;
+  --laranja: #905e01c6;
+  --amarelo: #a9a900cb;
+  --marrom: #65181869;
 }
 
 body {
@@ -145,7 +152,7 @@ nav li {
 }
 
 nav a {
-  color: var(--background);
+  color: #c1fab8;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -772,6 +779,12 @@ details p {
   transition: .8s;
 }
 
+.tabela{
+  text-align: center;
+  width: 700px;
+  margin: 20px auto;
+}
+
 table{
    border: 2px solid #1d723a ;
    margin:0  auto;
@@ -782,12 +795,6 @@ th,td{
   padding: 15px;
 }
 
-
-.tabela{
-  text-align: center;
-  width: 700px;
-  margin: 20px auto;
-}
 
 th{
   background-color: #2e7d32;
@@ -804,7 +811,7 @@ th{
 }
 
 #verde{
-  background-color: var(--verdeClaro);
+  background-color: var(--verde);
 }
 
 #amarelo{
@@ -825,10 +832,12 @@ th{
 
 #branco{
   background-color: var(--branco);
+  color: var(--tabBranco);
 }
 
 #cinza{
   background-color: var(--cinza);
+  color: var(--text);
 }
 
 #preto{
@@ -857,13 +866,12 @@ th{
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background-color: #e8f5e9;
+  background-color: var(--verdeClaro);
   box-shadow: 0 4px 12px rgba(164, 163, 163, 0.9);
   transition: .8s;
 }
 
 .lista-dicas:hover{
-  background-color: rgb(232, 245, 233,0.6);
   transform:  translateY(1px);
   transition: .8s;
 }
@@ -879,7 +887,7 @@ th{
 
 .lista-dicas li {
   margin-bottom: 18px;
-  color: #333;
+  color: var(--text);
 }
 
 .lista-dicas li span {
@@ -906,7 +914,7 @@ th{
   transform: translateY(-2px);
 }
 
- .imgg {
+.imgg {
   display: flex;
   justify-content: center;
   gap: 50px;      
@@ -1156,6 +1164,7 @@ button{
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    color: var(--text);
   }
 
   table {
