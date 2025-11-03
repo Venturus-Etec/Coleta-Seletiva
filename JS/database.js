@@ -3,6 +3,7 @@ const cadastro = document.getElementById('CadastroBtn');
 const linkCadastro = document.getElementById('link-cadastro');
 const linkLogin = document.getElementById('link-login');
 const fecharPopupBtn = document.getElementById('fecharPopupBtn');
+const fecharPopupBtn2 = document.getElementById('fecharPopupBtn2')
 const loginFormContainer = document.getElementById('login-form-container');
 const cadastroFormContainer = document.getElementById('cadastro-form-container');
 
@@ -40,6 +41,6 @@ fecharPopupBtn.addEventListener('click', () => {
     meuPopup.classList.remove('mostrar');
 });
 
-fecharPopupBtn.addEventListener('click', () => {
+fecharPopupBtn2.addEventListener('click', () => {
    meuPopup2.classList.remove('mostrar'); 
 });
