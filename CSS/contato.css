@@ -1,0 +1,99 @@
+body{
+    background-color: #e8f5e9;
+}
+
+.container{
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    border-radius: 20px;
+    width: max-content;
+    height: max-content;
+    padding: 30px 60px;    
+}
+
+label,input{
+    display: block;
+}
+
+input[type="text"], [type="email"]{
+    margin-bottom: 20px;
+    width: 700px;
+    height: 50px;
+}
+
+#btt{
+    cursor: pointer;
+    background-color: #2e7d32;
+    color: #ffffff;
+    border-radius: none;
+    border: none;
+    height: auto;
+    margin-top: 50px;
+    width: 150px;
+    height: 35px;
+    font-size: 120%;
+}
+
+p{
+    color: black;
+    font-size: 175%;
+}
+
+label{
+    font-size: 150%;
+}
+
+
+#bola{
+    display: flex;
+    align-self: flex-start;
+    margin-top: 100px;
+    width: 450px;
+    height: 400px;
+}
+
+.Botões, #bola,#T:not{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#insta{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #2e7d32;
+    margin-inline-end: 10px;  
+}
+
+#venturus{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #2e7d32;
+    margin-inline-end: 10px;
+}
+
+#email{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #2e7d32;
+    margin-inline-end: 10px;
+} 
+
+#i_texto{
+    height: 150px;
+}
+
+#T{
+    display: flex;
+    align-self: center;
+    height: 75px;
+}
