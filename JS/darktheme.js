@@ -1,8 +1,8 @@
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 const logoPrincipal = document.getElementById('menu-acc2');
-const logoClaro = 'IMG/menu-acc3.png';
-const logoEscuro = 'IMG/menu-acc4.png';
+const logoClaro = 'IMG/acessibilidade.png';
+const logoEscuro = 'IMG/acessibilidade_mododark.png';
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');

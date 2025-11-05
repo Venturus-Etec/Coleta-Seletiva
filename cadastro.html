@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coleta Seletiva</title>
-    <link rel="stylesheet" href="CSS/cadastro.css">`
+    <link rel="stylesheet" href="CSS/cadastro.css">
     <link rel="shortcut icon" href="IMG/Favicoon.png" type="image/x-icon">
     <script src="JS/database.js" defer></script>
     <script src="JS/darktheme.js" defer></script>
@@ -24,13 +24,13 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-            <a class="btn" href="cadastro.html"><img src="IMG/acount.png" class="btn2" alt="Acount"></a>
+            <a class="btn" href="cadastro.html"><img src="IMG/perfil.png" class="btn2" alt="Acount"></a>
             <a href="#" class="icon" onclick="btt_navbar()"> &#9776; </a>
         </div>            
     </div>
 
     <div>
-        <a id="menu-acc" href="menuacc.html"><img src="IMG/menu-acc3.png" id="menu-acc2" alt="Menu Acessibilidade"></a>
+        <a id="menu-acc" href="menuacc.html"><img src="IMG/acessibilidade.png" id="menu-acc2" alt="Menu Acessibilidade"></a>
     </div>
     
     <div id="forms-container" class="participar">
@@ -40,7 +40,7 @@
             <p>Faça seu login abaixo para acessar o Incentivo Verde.</p>
             <form id="formLogin">
                 <label for="loginEmail">E-mail:</label>
-                <input type="email" name="email" id="loginEmail" placeholder="@mariasilva@gmail.com" required>
+                <input type="email" name="email" id="loginEmail" placeholder="mariasilva@gmail.com" required>
                 <br>
 
                 <label for="loginSenha">Senha:</label>
@@ -51,6 +51,13 @@
             </form>
             <a href="#" id="link-cadastro">Não possui cadastro? Clique aqui.</a>
         </div>
+
+            <div id="usuario-info" style="display:none;" class="Infos">
+              <p id="mostrarNome"></p>
+              <p id="mostrarEmail"></p>
+              <p id="mostrarPontos"></p>
+              <button id="logoutBtn">Sair</button>
+            </div>
 
         <div id="cadastro-form-container" style="display: none;">
             <h1>Cadastro</h1>
@@ -82,7 +89,9 @@
         <h2>Cadastro</h2>
         <p class="pc1">Cadastro <strong>efetuado</strong> com suscesso </p>
       </div>
-  </div>
+    </div>
+  
+    
 
 
   <footer>
