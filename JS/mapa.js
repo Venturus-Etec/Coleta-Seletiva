@@ -8,7 +8,7 @@ function Mostrarmap() {
   
           const map = L.map('map').setView([lat, lon], 15);
           const icon = new L.Icon({
-              iconUrl: 'IMG/lixeira-removebg-preview.png',
+              iconUrl: 'IMG/lixeira_pontos.png',
               iconSize: [38, 38],
               iconAnchor: [16, 32],
               popupAnchor: [0, -32],

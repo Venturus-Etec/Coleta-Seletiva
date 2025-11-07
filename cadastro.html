@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coleta Seletiva</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/cadastro.css">
     <link rel="shortcut icon" href="IMG/Favicoon.png" type="image/x-icon">
-    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
     <script src="JS/database.js" defer></script>
     <script src="JS/darktheme.js" defer></script>
     <script src="JS/fonte.js" defer></script>
@@ -25,26 +24,27 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-            <a class="btn" href="cadastro.html"><img src="IMG/acount.png" class="btn2" alt="Acount"></a>
-             <a href="#" class="icon" onclick="btt_navbar()"> &#9776; </a>
+            <a class="btn" href="cadastro.html"><img src="IMG/perfil.png" class="btn2" alt="Acount"></a>
+            <a href="#" class="icon" onclick="btt_navbar()"> &#9776; </a>
         </div>            
     </div>
 
     <div>
-        <a id="menu-acc" href="menuacc.html"><img src="IMG/menu-acc3.png" id="menu-acc2" alt="Menu Acessibilidade"></a>
+        <a id="menu-acc" href="menuacc.html"><img src="IMG/acessibilidade.png" id="menu-acc2" alt="Menu Acessibilidade"></a>
     </div>
     
     <div id="forms-container" class="participar">
+      
         <div id="login-form-container">
             <h1 id="participe">Login</h1>
             <p>Faça seu login abaixo para acessar o Incentivo Verde.</p>
             <form id="formLogin">
                 <label for="loginEmail">E-mail:</label>
-                <input type="email" name="email" id="loginEmail" placeholder="@mariasilva@gmail.com">
+                <input type="email" name="email" id="loginEmail" placeholder="mariasilva@gmail.com" required>
                 <br>
 
                 <label for="loginSenha">Senha:</label>
-                <input type="password" name="senha" id="loginSenha" placeholder="********">
+                <input type="password" name="senha" id="loginSenha" placeholder="********" required>
                 <br>
 
                 <button type="submit" id="LoginBtn">Login</button>
@@ -52,41 +52,47 @@
             <a href="#" id="link-cadastro">Não possui cadastro? Clique aqui.</a>
         </div>
 
+            <div id="usuario-info" style="display:none;" class="Infos">
+              <p id="mostrarNome"></p>
+              <p id="mostrarEmail"></p>
+              <p id="mostrarPontos"></p>
+              <button id="logoutBtn">Sair</button>
+            </div>
+
         <div id="cadastro-form-container" style="display: none;">
             <h1>Cadastro</h1>
             <form id="formCadastro">
                 <label for="cadastroNome">Nome:</label>
-                <input type="text" id="cadastroNome" placeholder="José Silva">
+                <input type="text" id="cadastroNome" placeholder="José Silva" required>
                 <label for="cadastroEmail">E-mail:</label>
-                <input type="email" id="cadastroEmail" placeholder="josesilva@gmail.com">
+                <input type="email" id="cadastroEmail" placeholder="josesilva@gmail.com" required>
                 <label for="cadastroSenha">Senha:</label>
-                <input type="password" id="cadastroSenha" placeholder="********">
+                <input type="password" id="cadastroSenha" placeholder="********" required>
                 <button type="submit" id="CadastroBtn">Cadastrar</button>
             </form>
             <a href="#" id="link-login">Já tem cadastro? Clique aqui.</a>
         </div>
         
-        <p id="mensagem"></p>
     </div>
 
-    <div id="bem-vindo" style="display: none;">
-        <h1>Seu acesso foi liberado com sucesso!!</h1>
-        <h2>Informações:</h2>
-        <div class="Info">
-            <h4>Nome:</h4>
-            <span id="nome-usuario"></span>
-            <h4>Email:</h4>
-            <span id="email-usuario"></span>
-            <h4>Pontos</h4>
-            <span id="pontos-usuario"></span>
-            <button id="sacar">sacar</button>
-            <p id="mensagemsacar"></p>
+    <div id="meuPopup" class="popup-container">
+        <div class="popup-content">
+          <span class="fechar-popup" id="fecharPopupBtn">&times;</span>
+          <h2>Login</h2>
+          <p class="pc1">Login <strong>efetuado</strong> com suscesso </p>
         </div>
-        <p id="logout">
-            Para <strong>sair</strong> da conta
-        </p>
-        <button id="logout-button">Sair</button>
     </div>
+
+    <div id="meuPopup2" class="popup-container">
+      <div class="popup-content">
+        <span class="fechar-popup" id="fecharPopupBtn2">&times;</span>
+        <h2>Cadastro</h2>
+        <p class="pc1">Cadastro <strong>efetuado</strong> com suscesso </p>
+      </div>
+    </div>
+  
+    
+
 
   <footer>
   <div class="footer-container">

@@ -1,9 +1,12 @@
 const abrirPopupLink = document.getElementById('abrirPopupLink');
 const meuPopup = document.getElementById('meuPopup');
+const meuPopup2 = document.getElementById('meuPopup2');
 const fecharPopupBtn = document.getElementById('fecharPopupBtn');
 const GanharP = document.getElementById('GanharP');
 const mensagemErro = document.getElementById('mensagemErro');
 const meuInput = document.getElementById('Codigo');
+const fecharPopupBtn2 = document.getElementById('fecharPopupBtn2');
+
 
 abrirPopupLink.addEventListener('click', (e) => {
     e.preventDefault();
@@ -12,49 +15,37 @@ abrirPopupLink.addEventListener('click', (e) => {
 
 GanharP.addEventListener('click', () => {
     const codigo = meuInput.value.trim();
+    const logado = localStorage.getItem('logado');
+    const codigoUsado = localStorage.getItem('codigoUsado')
     if (codigo === '') {
         mensagemErro.textContent = 'O campo não pode ficar vazio.';
         mensagemErro.style.color = 'red';
         return;
-    }
-
-    const token = localStorage.getItem('userToken');
-    if (!token) {
-        mensagemErro.textContent = 'Você precisa estar logado para resgatar pontos.';
+    }else if (codigo !== 'CODIGO1000'){
+        mensagemErro.textContent = 'O codigo esta incorreto.';
         mensagemErro.style.color = 'red';
         return;
-    }
-
-    fetch(`${urlBackend}/validar-codigo`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            },
-            body: JSON.stringify({
-                codigo: codigo
-            })
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.sucesso) {
-                mensagemErro.textContent = data.mensagem;
-                mensagemErro.style.color = 'green';
-                pontosUsuario.textContent = data.novos_pontos;
-                meuPopup.classList.remove('mostrar');
-            } else {
-                mensagemErro.textContent = data.mensagem;
-                mensagemErro.style.color = 'red';
-            }
-        })
-        .catch(error => {
-            console.error('Erro ao resgatar código:', error);
-            mensagemErro.textContent = 'Clique Novamente.';
-            mensagemErro.style.color = 'red';
-        });
+    }else if (logado !== 'true'){
+        mensagemErro.textContent = 'Precisa estar logado.';
+        mensagemErro.style.color = 'red';
+        return
+    }else if(codigoUsado === 'true'){
+        mensagemErro.textContent = 'Você já usou este código.';
+        mensagemErro.style.color = 'red';
+        return;
+    }else{
+        meuPopup.classList.remove('mostrar');
+        meuPopup2.classList.add('mostrar');
+        localStorage.setItem('pontos','1000');
+        localStorage.setItem('codigoUsado', 'true');
+    } 
 });
-
 
 fecharPopupBtn.addEventListener('click', () => {
     meuPopup.classList.remove('mostrar');
 });
+
+fecharPopupBtn2.addEventListener('click', () => {
+    meuPopup2.classList.remove('mostrar');
+    
+})

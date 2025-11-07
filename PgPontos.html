@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pontos de coleta</title>
         <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/pgpontos.css">
         <script src="JS/mapa.js" defer></script>
         <script src="JS/darktheme.js" defer></script>
+        <script src="JS/pontos.js" defer></script>
         <script src="JS/fonte.js" defer></script>
         <script src="JS/nav.js" defer></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -28,24 +30,15 @@
                 </ul>
             </nav>
             <div class="cadastro-part">
-                <a class="btn" href="cadastro.html"><img src="IMG/acount.png" class="btn2" alt="Acount"></a>
+                <a class="btn" href="cadastro.html"><img src="IMG/perfil.png" class="btn2" alt="Acount"></a>
             </div>
             <a href="#" class="icon" onclick="btt_navbar()"> &#9776; </a>
         </div>            
     </div>
 
     <div>
-        <a id="menu-acc" href="menuacc.html"><img src="IMG/menu-acc3.png" alt="Menu Acessibilidade" id="menu-acc2"></a>
+        <a id="menu-acc" href="menuacc.html"><img src="IMG/acessibilidade.png" alt="Menu Acessibilidade" id="menu-acc2"></a>
     </div>
-
-           
-        </div>
-  
-        <h1 class="pc">Pontos de coleta próximo a você</h1>
-        <p class="pc1">Lembrando que para uma melhor orientaçäo do GPS o uso do celular é fundamental</p>
-        <button id="map" onclick="Mostrarmap()">Mostrar mapa</button>
-        <h1 class="pc">Beta:</h1>
-        <p class="pc1">Estamos super empolgados em ter você por aqui. Nosso site ainda está na fase Beta, o que significa que estamos trabalhando duro para expandir e melhorar. Por enquanto, o número de pontos de coleta pode ser limitado, mas estamos adicionando novos locais e recursos constantemente.</p>
 
         <h1 class="pc">Cheguei em um ponto de coleta</h1>
         <p class="pc1">Agradecemos sua colaboração com o descarte correto de resíduos. Por favor, utilize a lixeira correspondente ao material para que um código seja emitido, permitindo o resgate de seus pontos. <a href="#" id="abrirPopupLink">Clique aqui para ganhar os Pontos.</a></p>
@@ -55,12 +48,29 @@
             <span class="fechar-popup" id="fecharPopupBtn">&times;</span>
             <h2>Pontos</h2>
             <p class="pc1">Para ganhar <strong>1000</strong> pontos escreva o codigo abaixo:</p>
+            <p class="pc1" style="display: none;">Voce resgatou <strong>1000</strong> pontos, Parabens!!!!</p>
             <label for="Codigo">Codigo:</label>
             <input type="text" id="Codigo" name="Codigo" placeholder="Digite o codigo">
             <button id="GanharP">Receber</button>
             <p id="mensagemErro"></p>
           </div>
         </div>
+
+        <div id="meuPopup2" class="popup-container">
+          <div class="popup-content">
+            <span class="fechar-popup" id="fecharPopupBtn2">&times;</span>
+            <h2>Pontos</h2>
+            <p class="pc1">Voce resgatou <strong>1000</strong> pontos, Parabens!!!!</p>
+          </div>
+        </div>
+
+        </div>
+  
+        <h1 class="pc">Pontos de coleta próximo a você</h1>
+        <p class="pc1">Lembrando que para uma melhor orientaçäo do GPS o uso do celular é fundamental</p>
+        <button id="map" onclick="Mostrarmap()">Mostrar mapa</button>
+        <h1 class="pc">Beta:</h1>
+        <p class="pc1">Estamos super empolgados em ter você por aqui. Nosso site ainda está na fase Beta, o que significa que estamos trabalhando duro para expandir e melhorar. Por enquanto, o número de pontos de coleta pode ser limitado, mas estamos adicionando novos locais e recursos constantemente.</p>
 
  <footer>
   <div class="footer-container">

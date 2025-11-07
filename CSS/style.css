@@ -8,14 +8,17 @@
   --background:white;
   --text: black;
   --verdeEscuroNav: #2e7d32;
+  --verdeTexto: #c1fab8;
   --verdeClaro: #e8f5e9;
   --backgroundClaro: white;
   --backgroundEscuro: #000;
   --backgroundCinzaEscuro:#111111;
   --branco:#dadada;
+  --tabBrnco: #dadada;
   --preto: #000;
-  --cinza: #02020233;
-  --azul:#61c4e233;
+  --cinza: #393939a1;
+  --azul:#61c4e267;
+  --verde: #e8f5e9;
   --vermelho: #eb292933;
   --roxo: #80008033;
   --laranja: #ffa50033;
@@ -29,7 +32,11 @@
   --background: #121212;
   --verdeClaro:#191919;
   --text: #e0e0e0;
-  
+  --tabBranco: #000;
+  --verde: #005e08;
+  --laranja: #905e01c6;
+  --amarelo: #a9a900cb;
+  --marrom: #65181869;
 }
 
 body {
@@ -327,8 +334,7 @@ body {
 }
 
 .back {
-  background: var(--background);
-  color: var(--text);
+  background: var(--backgroundClaro);
   transform: rotateY(180deg);
   text-align: center;
 }
@@ -773,6 +779,12 @@ details p {
   transition: .8s;
 }
 
+.tabela{
+  text-align: center;
+  width: 700px;
+  margin: 20px auto;
+}
+
 table{
    border: 2px solid #1d723a ;
    margin:0  auto;
@@ -783,12 +795,6 @@ th,td{
   padding: 15px;
 }
 
-
-.tabela{
-  text-align: center;
-  width: 700px;
-  margin: 20px auto;
-}
 
 th{
   background-color: #2e7d32;
@@ -805,7 +811,7 @@ th{
 }
 
 #verde{
-  background-color: var(--verdeClaro);
+  background-color: var(--verde);
 }
 
 #amarelo{
@@ -826,10 +832,12 @@ th{
 
 #branco{
   background-color: var(--branco);
+  color: var(--tabBranco);
 }
 
 #cinza{
   background-color: var(--cinza);
+  color: var(--text);
 }
 
 #preto{
@@ -858,13 +866,12 @@ th{
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background-color: #e8f5e9;
+  background-color: var(--verdeClaro);
   box-shadow: 0 4px 12px rgba(164, 163, 163, 0.9);
   transition: .8s;
 }
 
 .lista-dicas:hover{
-  background-color: rgb(232, 245, 233,0.6);
   transform:  translateY(1px);
   transition: .8s;
 }
@@ -880,12 +887,17 @@ th{
 
 .lista-dicas li {
   margin-bottom: 18px;
-  color: #333;
+  color: var(--text);
 }
 
 .lista-dicas li span {
   font-weight: bold;
   color: #1b5e20;
+}
+
+.imgs img{
+  display: block;
+  flex: 0 0 100%;
 }
 
 .imgg img{
@@ -902,12 +914,13 @@ th{
   transform: translateY(-2px);
 }
 
- .imgg {
+.imgg {
   display: flex;
   justify-content: center;
   gap: 50px;      
   flex-wrap: wrap; 
   margin-top: 20px;  
+ 
 }
 
 .imgg p{
@@ -922,49 +935,6 @@ th{
 .imgg p:hover {
   background-color: rgba(79, 162, 86, 0.3);
   transform: translateY(-5px);
-}
-
-
-.popup-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.popup-content {
-  background-color: white;
-  color: black;
-  padding: 20px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  position: relative;
-  text-align: center;
-}
-
-.popup-content p {
-  color: black;
-}
-
-.fechar-popup {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #aaa;
-}
-
-.popup-container.mostrar {
-  display: flex;
 }
 
 #bem-vindo h1 {
@@ -1151,6 +1121,7 @@ button{
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    color: var(--text);
   }
 
   table {
