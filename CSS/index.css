@@ -78,6 +78,11 @@ p, strong{
     text-align: center;
 }
 
+.imgs img {
+  display: block;
+  flex: 0 0 100%;
+}
+
 .nav {
     width: 100%;
     background: var(--verdeEscuroNav);
@@ -249,6 +254,12 @@ body {
   overflow: hidden;
   width: 100%;
   background-color: var(--verdeClaro);
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .imgs{
