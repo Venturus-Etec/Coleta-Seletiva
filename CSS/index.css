@@ -484,7 +484,6 @@ footer {
   animation: pulse 3s infinite;
 }
 
-
 @media (max-width: 1025px) {
   .nav ul {
     flex-direction: column;
@@ -535,7 +534,6 @@ footer {
     width: 40px;
   }
 
-
   .nav.responsive ul {
     top: 50%;
     right: 50%;
@@ -558,19 +556,6 @@ footer {
     flex-direction: column;
     gap: 16px;
     padding: 16px;
-  }
-
-  .tabela {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    color: var(--text);
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 400px;
   }
 
   .home{
@@ -686,18 +671,6 @@ footer {
     padding: 16px;
   }
 
-  .tabela {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 400px;
-  }
-
   .home{
     display: none;
   }
@@ -799,17 +772,6 @@ footer {
     max-width: 350px;
   }
 
-  .tabela {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  table {
-    width: 50%;
-    border-collapse: collapse;
-    min-width: 400px;
-  }
 
     #menu-acc{
   position: fixed;
@@ -897,18 +859,6 @@ footer {
   .card {
     width: 70%;
     max-width: 350px;
-  }
-
-  .tabela {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  table {
-    width: 50%;
-    border-collapse: collapse;
-    min-width: 400px;
   }
 
   #home{
@@ -1011,18 +961,6 @@ footer {
   .card {
     width: 70%;
     max-width: 350px;
-  }
-
-  .tabela {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  table {
-    width: 50%;
-    border-collapse: collapse;
-    min-width: 400px;
   }
 
   #home{

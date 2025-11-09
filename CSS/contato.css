@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
     background-color: #e8f5e9;
 }
@@ -98,7 +97,7 @@ label{
     align-self: center;
     height: 75px;
 }
-=======
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -882,5 +881,3 @@ body {
   }
 
 }
-
->>>>>>> 6724494681fabc77d0bf390c01c6bf42d5debcf1
