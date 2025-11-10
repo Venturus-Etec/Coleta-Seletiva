@@ -1,0 +1,29 @@
+.controles-fonte{
+  margin-bottom: 20px;
+}
+
+.testex{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+@media (max-width: 1025px) {
+
+}
+
+@media (max-width: 781px) {
+  
+}
+
+@media (max-width: 426px) {
+ 
+}
+
+@media (max-width: 376px) {
+
+}
+ 
+@media (max-width: 320px) {
+
+}

@@ -1,0 +1,142 @@
+:root{
+    --background:white;
+    --text: black;
+    --verdeEscuroNav: #2e7d32;
+    --verdeTexto: #c1fab8;
+    --verdeClaro: #e8f5e9;
+    --backgroundClaro: white;
+    --backgroundEscuro: #000;
+    --backgroundCinzaEscuro:#111111;
+    --branco:#dadada;
+    --tabBrnco: #dadada;
+    --preto: #000;
+    --cinza: #393939a1;
+    --azul:#61c4e267;
+    --verde: #e8f5e9;
+    --vermelho: #eb292933;
+    --roxo: #80008033;
+    --laranja: #ffa50033;
+    --marrom: #a52a2a33;
+    --amarelo:#ffff0033;
+    --preto2:#0000004d;
+    --tamanho-fonte-base: 16px;
+}
+
+.dark-theme{
+    --background: #121212;
+    --verdeClaro:#191919;
+    --text: #e0e0e0;
+    --text: #e0e0e0;
+    --tabBranco: #000;
+    --verde: #005e08;
+    --laranja: #905e01c6;
+    --amarelo: #a9a900cb;
+    --marrom: #65181869;
+}
+
+
+.container{
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    border-radius: 20px;
+    width: max-content;
+    height: max-content;
+    padding: 30px 60px;    
+}
+
+label,input{
+    display: block;
+}
+
+input[type="text"], [type="email"]{
+    margin-bottom: 20px;
+    width: 700px;
+    height: 50px;
+}
+
+#btt{
+    cursor: pointer;
+    background-color: #2e7d32;
+    color: #ffffff;
+    border-radius: none;
+    border: none;
+    height: auto;
+    margin-top: 50px;
+    width: 150px;
+    height: 35px;
+    font-size: 120%;
+}
+
+#bola{
+    display: flex;
+    align-self: flex-start;
+    margin-top: 100px;
+    width: 450px;
+    height: 400px;
+}
+
+.Botões, #bola,#T:not{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#insta{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #2e7d32;
+    margin-inline-end: 10px;  
+}
+
+#venturus{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #2e7d32;
+    margin-inline-end: 10px;
+}
+
+#email{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #2e7d32;
+    margin-inline-end: 10px;
+} 
+
+#i_texto{
+    height: 150px;
+}
+
+#T{
+    display: flex;
+    align-self: center;
+    height: 75px;
+}
+
+@media (max-width: 1025px) {
+
+}
+
+@media (max-width: 781px) {
+  
+}
+
+@media (max-width: 426px) {
+ 
+}
+
+@media (max-width: 376px) {
+
+}
+ 
+@media (max-width: 320px) {
+
+}
