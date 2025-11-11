@@ -1,12 +1,12 @@
 const imgs = document.getElementById('img1');
 const img = document.querySelectorAll('#img1 img');
 
-let idex = 0 
+let idex = 0
 
-function carrossel(){
+function carrossel() {
     img[idex].classList.remove('active');
     idex++;
-    if(idex > img.length -1){
+    if (idex > img.length - 1) {
         idex = 0;
     }
     img[idex].classList.add('active');
