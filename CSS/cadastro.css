@@ -1,17 +1,17 @@
-:root{
-    --background:#ffffff;
-    --text: #000000;
-    --verdeClaro: #e8f5e9;
-    --backgroundClaro: #ffffff;
-    --backgroundCinzaEscuro:#111111;
-    --backgroundInput: #fff;
+:root {
+  --background: #ffffff;
+  --text: #000000;
+  --verdeClaro: #e8f5e9;
+  --backgroundClaro: #ffffff;
+  --backgroundCinzaEscuro: #111111;
+  --backgroundInput: #fff;
 }
 
-.dark-theme{
-    --background: #121212;
-    --verdeClaro:#191919;
-    --text: #e0e0e0;
-    --backgroundInput: #191919;
+.dark-theme {
+  --background: #121212;
+  --verdeClaro: #191919;
+  --text: #e0e0e0;
+  --backgroundInput: #191919;
 }
 
 .popup-container {
@@ -27,7 +27,7 @@
   z-index: 1000;
 }
 
-.Infos{
+.Infos {
   color: #ffffff;
 }
 
@@ -71,18 +71,18 @@
   display: flex;
 }
 
-button{
-  background-color: #2e7d32; 
-      color: white; 
-      border: none; 
-      padding: 8px 12px; 
-      border-radius: 5px; 
-      cursor: pointer; 
-      font-weight: bold;
-      font-size: 14px;
-      text-align: center;
-      display: block;
-      margin: auto;
+button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .participar {
@@ -90,10 +90,6 @@ button{
   background: var(--verdeClaro);
   text-align: center;
   color: var(--backgroundCinzaEscuro);
-}
-
-.participar input{
-  background-color: var(--backgroundClaro);
 }
 
 .participar h1 {
@@ -109,12 +105,15 @@ button{
 }
 
 .participar label {
+  color: var(--text);
   display: block;
   margin: 10px 0 5px;
   font-weight: bold;
 }
 
 .participar input {
+  background-color: var(--backgroundInput);
+  color: var(--text);
   width: 100%;
   padding: 10px;
   border: 1px solid #bbb;
@@ -130,42 +129,16 @@ button{
   outline: none;
 }
 
-#formLogin{
+#msgl {
   color: var(--text);
 }
 
-#msgl{
-  color: var(--text);
-}
+@media (max-width: 1025px) {}
 
-#formLogin input{
-  background: var(--backgroundInput);
-}
+@media (max-width: 781px) {}
 
-#formCadastro{
-  color: var(--text);
-}
+@media (max-width: 426px) {}
 
-#formCadastro input{
-  background: var(--backgroundInput);
-}
+@media (max-width: 376px) {}
 
-@media (max-width: 1025px) {
-
-}
-
-@media (max-width: 781px) {
-  
-}
-
-@media (max-width: 426px) {
- 
-}
-
-@media (max-width: 376px) {
-
-}
- 
-@media (max-width: 320px) {
-
-}
+@media (max-width: 320px) {}

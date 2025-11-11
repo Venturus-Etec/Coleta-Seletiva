@@ -1,9 +1,9 @@
-:root{
-    --text: black;
+:root {
+  --text: black;
 }
 
-.dark-theme{
-    --text: #e0e0e0;
+.dark-theme {
+  --text: #e0e0e0;
 }
 
 .popup-container {
@@ -48,25 +48,25 @@
   display: flex;
 }
 
-.pc{
+.pc {
   text-align: center;
   margin: 20px;
   color: #2e7d32;
 }
 
-.pc1{
+.pc1 {
   text-align: center;
   margin: 0 20px 20px 20px;
   color: var(--text);
 }
 
-#map{
+#map {
   height: 500px;
   width: 100%;
 }
 
 @media (max-width: 781px) {
-    #map{
-        height: 300px;
-    }
+  #map {
+    height: 300px;
+  }
 }

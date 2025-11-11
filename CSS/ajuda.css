@@ -1,27 +1,27 @@
-:root{
-    --background: #ffffff;
-    --text: #000000;
-    --verdeClaro: #e8f5e9;
-    --branco:#dadada;
-    --cinza: #393939a1;
-    --azul:#61c4e267;
-    --verde: #e8f5e9;
-    --vermelho: #eb292933;
-    --roxo: #80008033;
-    --laranja: #ffa50033;
-    --marrom: #a52a2a33;
-    --amarelo:#ffff0033;
-    --preto2:#0000004d;
+:root {
+  --background: #ffffff;
+  --text: #000000;
+  --verdeClaro: #e8f5e9;
+  --branco: #dadada;
+  --cinza: #393939a1;
+  --azul: #61c4e267;
+  --verde: #e8f5e9;
+  --vermelho: #eb292933;
+  --roxo: #80008033;
+  --laranja: #ffa50033;
+  --marrom: #a52a2a33;
+  --amarelo: #ffff0033;
+  --preto2: #0000004d;
 }
 
-.dark-theme{
-    --background: #121212;
-    --verdeClaro:#191919;
-    --text: #e0e0e0;
-    --verde: #005e08;
-    --laranja: #905e01c6;
-    --amarelo: #a9a900cb;
-    --marrom: #65181869;
+.dark-theme {
+  --background: #121212;
+  --verdeClaro: #191919;
+  --text: #e0e0e0;
+  --verde: #005e08;
+  --laranja: #905e01c6;
+  --amarelo: #a9a900cb;
+  --marrom: #65181869;
 }
 
 .content {
@@ -57,10 +57,11 @@
   transition: .8s;
 }
 
-.lista-dicas:hover{
-  transform:  translateY(1px);
+.lista-dicas:hover {
+  transform: translateY(1px);
   transition: .8s;
 }
+
 .lista-dicas h2 {
   text-align: center;
   color: #2e7d32;
@@ -81,111 +82,114 @@
   color: #1b5e20;
 }
 
-.tabela{
+.tabela {
   text-align: center;
   width: 700px;
   margin: 20px auto;
 }
 
-table{
-   border: 2px solid #1d723a ;
-   margin:0  auto;
+table {
+  border: 2px solid #1d723a;
+  margin: 0 auto;
 }
 
-th,td{
+th,
+td {
   border: 1px solid #1b5e20;
   padding: 15px;
 }
 
 
-th{
+th {
   background-color: #2e7d32;
   color: white;
   width: 200px;
 }
 
-#azul{
+#azul {
   background-color: var(--azul);
 }
 
-#vermelho{
+#vermelho {
   background-color: var(--vermelho);
 }
 
-#verde{
+#verde {
   background-color: var(--verde);
 }
 
-#amarelo{
+#amarelo {
   background-color: var(--amarelo);
 }
 
-#laranja{
+#laranja {
   background-color: var(--laranja);
 }
 
-#roxo{
+#roxo {
   background-color: var(--roxo);
 }
 
-#marrom{
+#marrom {
   background-color: var(--marrom);
 }
 
-#branco{
+#branco {
   background-color: var(--branco);
   color: #000000;
 }
 
-#cinza{
+#cinza {
   background-color: var(--cinza);
   color: var(--text);
 }
 
-#preto{
+#preto {
   background-color: var(--preto2);
 }
 
-.faq{
+.faq {
   margin: 40px auto;
   max-width: 700px;
 }
 
-.faq h2{
+.faq h2 {
   text-align: center;
   color: #2e7d32;
   font-size: 2rem;
   margin-bottom: 25px;
 }
 
-    details{
-      border:1px solid white;
-       border-radius:12px; 
-       padding:12px 14px; 
-       background:var(--verdeClaro);
-      }
-    details+details{
-      margin-top:12px
-    }
-    summary{
-      cursor:pointer; 
-      font-weight: 600;
-    }
+details {
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: var(--verdeClaro);
+}
 
- details {
-   margin: 0 auto 25px;
-  border: 1px solid #ccc; 
+details+details {
+  margin-top: 12px
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details {
+  margin: 0 auto 25px;
+  border: 1px solid #ccc;
   padding: 15px 20px;
   margin-bottom: 10px;
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.3 ease;
-} 
+}
 
-details:hover{
+details:hover {
   border-color: #ccc;
   transform: translatex(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
   transition: .8s;
 }
 
@@ -194,7 +198,7 @@ summary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; 
+  cursor: pointer;
   position: relative;
   padding-right: 25px;
   font-weight: bold;
@@ -214,7 +218,7 @@ summary::before {
   display: inline-block;
   margin-right: 8px;
   transition: transform 0.2s ease;
-  font-size: 0.8em; 
+  font-size: 0.8em;
   color: #2e7d32;
 }
 
@@ -224,7 +228,7 @@ details[open] summary::before {
 
 details[open] summary {
   color: #1b5e20;
-} 
+}
 
 details p {
   padding-top: 10px;
@@ -252,7 +256,7 @@ details p {
   margin: 0 auto;
 }
 
-#ponto{
+#ponto {
   background-color: var(--background);
   color: var(--text);
   padding: 60px 20px;
@@ -315,7 +319,7 @@ details p {
     min-width: 400px;
   }
 }
- 
+
 @media (max-width: 320px) {
   .tabela {
     width: 100%;
