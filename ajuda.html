@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="CSS/ajuda.css">
   <link rel="stylesheet" href="CSS/geral.css">
   <link rel="shortcut icon" href="IMG/Favicoon.png" type="image/x-icon">
+  <script src="JS/acc.js" defer></script>
   <script src="JS/darktheme.js" defer></script>
   <script src="JS/fonte.js" defer></script>
   <script src="JS/nav.js" defer></script>
@@ -34,9 +35,25 @@
     </div>
   </div>
 
-  <div>
-    <a id="menu-acc" href="menuacc.html"><img src="IMG/acessibilidade.png" alt="Menu Acessibilidade" id="menu-acc2"></a>
-  </div>
+    <div>
+        <a id="menu-acc" onclick="btt_acc()"><img src="IMG/acessibilidade.png" id="menu-acc2" alt="Menu Acessibilidade"></a>
+    </div>
+
+    <div id="caixaAcessibilidade">
+        <div class="cabecalhoAcessibilidade">
+            <h4>Acessibilidade</h4>
+            <button class="fechar" onclick="fecharAcessibilidade()">&times</button>
+        </div>
+        <div class="acessibilidade">
+            <div class="controles-fonte">
+                <button id="aumentar">A+</button>
+                <button id="diminuir">A-</button>
+                <button id="reset">A</button>
+            </div>
+            <button id="theme-toggle">🌙 Mudar Tema</button>
+        </div>
+    </div>
+
   <div class="maincontent">
     <div class="content">
       <h1>Como separar corretamente os resíduos</h1>

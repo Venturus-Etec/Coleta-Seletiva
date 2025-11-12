@@ -1,17 +1,21 @@
 :root {
   --background: white;
   --text: black;
+  --verdeClaro: #e8f5e9;
+  --verde: #e8f5e9;
 }
 
 .dark-theme {
   --background: #121212;
   --text: #e0e0e0;
+  --verdeClaro: #191919;
+  --verde: #005e08;
 }
 
 .sobre {
   padding: 60px 20px;
   text-align: center;
-  background: var(--background);
+  background: var(--verdeClaro);
   color: var(--text);
 }
 
@@ -23,11 +27,6 @@
 .sobre p {
   max-width: 800px;
   margin: 0 auto;
-}
-
-#sobrep {
-  background-color: white;
-  color: black;
 }
 
 .imgg img {
@@ -49,11 +48,12 @@
   gap: 50px;
   flex-wrap: wrap;
   margin-top: 20px;
+  background-color: var(--verdeClaro);
 
 }
 
 .imgg p {
-  background-color: #e8f5e9;
+  background-color: var(--verde);
   width: 300px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);

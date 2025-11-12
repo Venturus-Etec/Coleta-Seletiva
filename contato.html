@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/contato(rever).css">
+    <link rel="stylesheet" href="CSS/contato.css">
     <link rel="stylesheet" href="CSS/geral.css">
     <title>Coleta Seletiva</title>
     <link rel="shortcut icon" href="IMG/Favicoon.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+    <script src="JS/acc.js" defer></script>
     <script src="JS/contato.js" defer></script>
     <script src="JS/darktheme.js" defer></script>
     <script src="JS/fonte.js" defer></script>
@@ -37,8 +38,22 @@
     </div>
 
     <div>
-        <a id="menu-acc" href="menuacc.html"><img src="IMG/acessibilidade.png" id="menu-acc2"
-                alt="Menu acessibilidade"></a>
+        <a id="menu-acc" onclick="btt_acc()"><img src="IMG/acessibilidade.png" id="menu-acc2" alt="Menu Acessibilidade"></a>
+    </div>
+
+    <div id="caixaAcessibilidade">
+        <div class="cabecalhoAcessibilidade">
+            <h4>Acessibilidade</h4>
+            <button class="fechar" onclick="fecharAcessibilidade()">&times</button>
+        </div>
+        <div class="acessibilidade">
+            <div class="controles-fonte">
+                <button id="aumentar">A+</button>
+                <button id="diminuir">A-</button>
+                <button id="reset">A</button>
+            </div>
+            <button id="theme-toggle">🌙 Mudar Tema</button>
+        </div>
     </div>
 
     <div class="container">

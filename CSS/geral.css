@@ -8,6 +8,7 @@
 
 :root {
   --background: #ffffff;
+  --verdeClaro: #e8f5e9;
   --text: #000000;
   --verdeEscuroNav: #2e7d32;
   --verdeTexto: #c1fab8;
@@ -18,6 +19,7 @@
 .dark-theme {
   --background: #121212;
   --text: #e0e0e0;
+  --verdeClaro: #191919;
 }
 
 body {
@@ -154,6 +156,54 @@ nav a:hover::before {
 #menu-acc img {
   background-color: transparent 50%;
   border-radius: 50%;
+}
+
+#caixaAcessibilidade {
+  position: fixed;
+  top: 65%;
+  right: 20px;
+  width: 240px;
+  background-color: var(--verdeClaro);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  padding: 12px;
+  display: none;
+  animation: fadeIn 0.3s ease;
+  z-index: 9998;
+}
+
+.cabecalhoAcessibilidade h4 {
+  margin: 0;
+  text-align: center;
+  color: var(--verdeEscuroNav);
+  font-size: 18px;
+}
+
+.cabecalhoAcessibilidade .fechar {
+  position: absolute;
+  bottom: 165px;
+  left: 100px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #aaa;
+}
+
+#caixaAcessibilidade button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 button {
@@ -299,6 +349,8 @@ footer {
 
   #menu-acc img {
     transition: 0.8s;
+    width: 70px;
+    height: 70px;
   }
 
   #menu-acc :hover {
