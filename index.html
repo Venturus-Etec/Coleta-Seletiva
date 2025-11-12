@@ -17,43 +17,43 @@
     <div class="main-menu">
         <div class="nav">
             <img class="logo" src="IMG/Favicoon.png" alt="logo do site">
-            <nav>
+            <nav aria-label="Menu-Principal">
                 <ul>
-                    <li class="prin"><a href="#">Home</a></li>
-                    <li><a href="incentivoverde.html">Incentivo Verde</a></li>
-                    <li><a href="ajuda.html">Ajuda</a></li>
-                    <li><a href="PgPontos.html">Pontos de coleta</a></li>
-                    <li><a href="quemsomos.html">Quem somos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#" aria-label="Pagina Inicial">Home</a></li>
+                    <li><a href="incentivoverde.html" aria-label="Pagina Incentivo Verde">Incentivo Verde</a></li>
+                    <li><a href="ajuda.html" aria-label="Pagina Ajuda">Ajuda</a></li>
+                    <li><a href="PgPontos.html" aria-label="Pagina Pontos de Coleta">Pontos de coleta</a></li>
+                    <li><a href="quemsomos.html" aria-label="Pagina Quem Somos">Quem somos</a></li>
+                    <li><a href="contato.html" aria-label="Pagina Contato">Contato</a></li>
                 </ul>
             </nav>
             <div class="cadastro-part">
-                <a class="btn" href="cadastro.html"><img class="btn2" src="IMG/perfil.png" alt="Acount"></a>
+                <a class="btn" href="cadastro.html" aria-label="Ir para página de cadastro"><img class="btn2" src="IMG/perfil.png" alt="Acount"></a>
             </div>
-            <a href="#" class="icon" onclick="btt_navbar()"> &#9776; </a>
+            <a href="#" class="icon" onclick="btt_navbar()" aria-label="Abrir menu de navegação móvel"> &#9776; </a>
         </div>            
     </div>
 
     <div>
-        <a id="menu-acc" onclick="btt_acc()"><img src="IMG/acessibilidade.png" id="menu-acc2" alt="Menu Acessibilidade"></a>
+        <a id="menu-acc" onclick="btt_acc()" aria-label="Abrir menu de acessibilidade"><img src="IMG/acessibilidade.png" id="menu-acc2" alt="Menu Acessibilidade"></a>
     </div>
 
-    <div id="caixaAcessibilidade">
+    <div id="caixaAcessibilidade" aria-label="Janela de acessibilidade">
         <div class="cabecalhoAcessibilidade">
             <h4>Acessibilidade</h4>
-            <button class="fechar" onclick="fecharAcessibilidade()">&times</button>
+            <button class="fechar" onclick="fecharAcessibilidade()" aria-label="Fechar menu de acessibilidade">&times</button>
         </div>
         <div class="acessibilidade">
-            <div class="controles-fonte">
-                <button id="aumentar">A+</button>
-                <button id="diminuir">A-</button>
-                <button id="reset">A</button>
+            <div class="controles-fonte" aria-label="Controles de tamanho da fonte">
+                <button id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button id="reset" aria-label="Redefinir tamanho da fonte">A</button>
             </div>
-            <button id="theme-toggle">🌙 Mudar Tema</button>
+            <button id="theme-toggle" aria-label="Alternar entre modo claro e escuro">🌙 Mudar Tema</button>
         </div>
     </div>
 
-        <div id="carrosel" class="home">
+        <div id="carrosel" class="home" aria-label="Carrossel de imagens sobre coleta seletiva">
             <div class="carrosel-home">
                 <div class="imgs" id="img1">
                     <img src="IMG/carrossel-1-85vh.png" alt="Carrosel Descarte de Lixo (Homem)" class="active">
@@ -83,10 +83,10 @@
             <p>Clique para visualizar!</p>
         </div>
         
-        <div class="cards">
+        <div class="cards" aria-label="Tipos de materiais recicláveis">
             <div class="card">
             <div class="inner">
-            <div class="front">
+            <div class="front" aria-label="Categoria Plástico">
                 <img src="IMG/lixeira_vermelha.png" alt="Lixeira Plástico">
                 <h3>Plástico</h3>
             </div>
@@ -99,7 +99,7 @@
 
          <div class="card">
             <div class="inner">
-            <div class="front">
+            <div class="front" aria-label="Categoria Papel">
                 <img src="IMG/lixeira_azul.png" alt="Lixeira Papel">
                 <h3>Papel</h3>
             </div>
@@ -112,7 +112,7 @@
 
           <div class="card">
             <div class="inner">
-                <div class="front">
+                <div class="front" aria-label="Categoria Vidro"></div>
                     <img src="IMG/lixeira_verde.png" alt="Lixeira Vidro">
                     <h3>Vidro</h3>
                 </div>
@@ -127,7 +127,7 @@
 
            <div class="card">
               <div class="inner">
-              <div class="front">
+              <div class="front" aria-label="Categoria Metal">
                 <img src="IMG/lixeira_amarela.png" alt="Lixeira Metal">
                 <h3>Metal</h3>
             </div>
@@ -154,15 +154,15 @@
 
     <footer>
   <div class="footer-container">
-    <div class="footer-left">
+    <div class="footer-left" aria-label="Informações de contato e direitos autorais">
       <h3>🌱 Incentivo Verde</h3>
       <p>© Grupo 1ºAMS</p>
       <p>Etec Lins • 04/11/2025</p>
-      <p>Instagram: <a href="https://www.instagram.com/coletaseletiva03?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">coletaseletiva03</a></p>
-      <p>Email: <a href="mailto:coletaseletiva03@gmail.com?subject=Contato&body=">coletaseletiva03@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/coletaseletiva03?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Perfil no Instagram da Coleta Seletiva">coletaseletiva03</a></p>
+      <p>Email: <a href="mailto:coletaseletiva03@gmail.com?subject=Contato&body=" aria-label="Enviar e-mail para Coleta Seletiva">coletaseletiva03@gmail.com</a></p>
     </div>
 
-    <div class="footer-right">
+    <div class="footer-right" aria-label="Lista de integrantes do projeto">
       <h4>Integrantes</h4>
       <ul>
         <li>Lucas Henrique Rodrigues Camargo</li>
