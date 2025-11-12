@@ -57,7 +57,7 @@
 
   <div id="forms-container" class="participar">
 
-    <div id="login-form-container">
+    <div id="login-form-container" aria-label="Formulário de login de usuário">
       <h1 id="participe">Login</h1>
       <p id="msgl">Faça seu login abaixo para acessar o Incentivo Verde.</p>
       <form id="formLogin">
@@ -69,9 +69,9 @@
         <input type="password" name="senha" id="loginSenha" placeholder="********" required>
         <br>
 
-        <button type="submit" id="LoginBtn">Login</button>
+        <button type="submit" id="LoginBtn" aria-label="Botão para fazer login">Login</button>
       </form>
-      <a href="#" id="link-cadastro">Não possui cadastro? Clique aqui.</a>
+      <a href="#" id="link-cadastro" aria-label="Ir para formulário de cadastro">Não possui cadastro? Clique aqui.</a>
     </div>
 
     <div id="usuario-info" style="display:none;" class="Infos">
@@ -81,7 +81,7 @@
       <button id="logoutBtn">Sair</button>
     </div>
 
-    <div id="cadastro-form-container" style="display: none;">
+    <div id="cadastro-form-container" style="display: none;" aria-label="Formulário de cadastro de novo usuário">
       <h1>Cadastro</h1>
       <form id="formCadastro">
         <label for="cadastroNome">Nome:</label>
@@ -90,24 +90,24 @@
         <input type="email" id="cadastroEmail" placeholder="josesilva@gmail.com" required>
         <label for="cadastroSenha">Senha:</label>
         <input type="password" id="cadastroSenha" placeholder="********" required>
-        <button type="submit" id="CadastroBtn">Cadastrar</button>
+        <button type="submit" id="CadastroBtn" aria-label="Botão para concluir cadastro">Cadastrar</button>
       </form>
-      <a href="#" id="link-login">Já tem cadastro? Clique aqui.</a>
+      <a href="#" id="link-login" aria-label="Voltar para formulário de login">Já tem cadastro? Clique aqui.</a>
     </div>
 
   </div>
 
-  <div id="meuPopup" class="popup-container">
+  <div id="meuPopup" class="popup-container" role="dialog" aria-label="Popup de confirmação de login bem-sucedido">
     <div class="popup-content">
-      <span class="fechar-popup" id="fecharPopupBtn">&times;</span>
+      <span class="fechar-popup" id="fecharPopupBtn" aria-label="Fechar popup de login">&times;</span>
       <h2>Login</h2>
       <p class="pc1">Login <strong>efetuado</strong> com suscesso </p>
     </div>
   </div>
 
-  <div id="meuPopup2" class="popup-container">
+  <div id="meuPopup2" class="popup-container" role="dialog" aria-label="Popup de confirmação de cadastro bem-sucedido">
     <div class="popup-content">
-      <span class="fechar-popup" id="fecharPopupBtn2">&times;</span>
+      <span class="fechar-popup" id="fecharPopupBtn2" aria-label="Fechar popup de cadastro">&times;</span>
       <h2>Cadastro</h2>
       <p class="pc1">Cadastro <strong>efetuado</strong> com suscesso </p>
     </div>
