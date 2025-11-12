@@ -231,13 +231,6 @@
     margin-bottom: 20px;
   }
 
-  .cards1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
-  }
-
   .home {
     display: none;
   }
@@ -266,13 +259,6 @@
     margin-bottom: 20px;
   }
 
-  .cards1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
-  }
-
   .home {
     display: none;
   }
@@ -288,14 +274,6 @@
 }
 
 @media (max-width: 426px) {
-
-  .cards,
-  .cards1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
   .cards {
     gap: 12px;
     width: 95%;
@@ -308,6 +286,15 @@
     max-width: 350px;
   }
 
+  #home {
+    display: none;
+  }
+
+  .frase {
+    display: block;
+    margin: 20px;
+  }
+
   .clique-part {
     display: block;
   }
@@ -315,14 +302,6 @@
 }
 
 @media (max-width: 376px) {
-
-  .cards,
-  .cards1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
   .cards {
     gap: 12px;
     width: 95%;
@@ -351,14 +330,6 @@
 }
 
 @media (max-width: 320px) {
-
-  .cards,
-  .cards1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
   .cards {
     gap: 12px;
     width: 95%;
