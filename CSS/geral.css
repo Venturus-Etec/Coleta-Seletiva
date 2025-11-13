@@ -158,11 +158,12 @@ nav a:hover::before {
   border-radius: 50%;
 }
 
-#caixaAcessibilidade {
+#caixaAcessibilidade{
   position: fixed;
-  top: 65%;
+  top: 72%;
   right: 20px;
-  width: 240px;
+  width: 170px;
+  height: 170px;
   background-color: var(--verdeClaro);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -172,36 +173,52 @@ nav a:hover::before {
   z-index: 9998;
 }
 
-.cabecalhoAcessibilidade h4 {
+.cabecalhoAcessibilidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cabecalhoAcessibilidade h4{
   margin: 0;
   text-align: center;
   color: var(--verdeEscuroNav);
-  font-size: 18px;
+  width: 100%;
+  font-size: 1.2rem;
 }
 
-.cabecalhoAcessibilidade .fechar {
+.cabecalhoAcessibilidade .fechar{
   position: absolute;
-  bottom: 165px;
-  left: 100px;
+  bottom: 132px;
+  left: 74px;
   background: none;
   border: none;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   color: #aaa;
 }
 
-#caixaAcessibilidade button {
+.acessibilidade {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;  
   width: 100%;
-  margin: 5px 0;
-  padding: 8px;
-  border: none;
-  border-radius: 6px;
+}
+
+#caixaAcessibilidade button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   cursor: pointer;
+  margin: 0px 5px 5px 0px;
   transition: background-color 0.2s ease;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn{
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
@@ -283,7 +300,7 @@ footer {
   animation: pulse 3s infinite;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -314,14 +331,14 @@ footer {
     color: var(--branco);
     position: absolute;
     left: 95%;
-    top: 35%;
+    top:25%;
     z-index: 20;
     text-decoration: none;
   }
 
   .btn2 {
     position: relative;
-    left: 130%;
+    left: 140%;
   }
 
   .logo {
@@ -334,23 +351,25 @@ footer {
   }
 
   .nav.responsive ul {
-    top: 50%;
-    right: 50%;
+    top: 50px;
+    right: 0;
   }
 
   #menu-acc {
     position: fixed;
     width: 40px;
     z-index: 100;
-    left: 93%;
-    top: 93%;
+    left: 94%;
+    top: 95%;
     transition: .2s;
   }
 
   #menu-acc img {
     transition: 0.8s;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
+    background-color: transparent 50%;
+    border-radius: 50%;
   }
 
   #menu-acc :hover {
@@ -358,94 +377,21 @@ footer {
     transition: .4s;
   }
 
-  #menu-acc img {
-    background-color: transparent 50%;
-    border-radius: 50%;
+  #caixaAcessibilidade{
+    left: 845px;
+    top: 84%;
+    width: 170px;
+    height: 170px;
   }
 
+  .cabecalhoAcessibilidade .fechar{
+    bottom: 135px;
+    left: 75px;
+    font-size: 15px;
+  }
 }
 
-@media (max-width: 781px) {
-  .nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 55px;
-    right: 100%;
-    width: 100vw;
-    background: #2e7d32;
-    transition: right 0.3s ease-in-out;
-    padding: 15px 0;
-    z-index: 10;
-  }
-
-  .nav ul li {
-    text-align: right;
-    padding-right: 20px;
-    width: 100%;
-  }
-
-  .nav ul li a {
-    display: block;
-    width: 90%;
-    margin: 5px auto;
-    text-align: center;
-  }
-
-  .icon {
-    display: block;
-    color: var(--branco);
-    position: absolute;
-    left: 95%;
-    top: 35%;
-    z-index: 20;
-    text-decoration: none;
-  }
-
-  .btn2 {
-    position: relative;
-    left: 95%;
-  }
-
-  .logo {
-    display: block;
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-  }
-
-  .nav.responsive ul {
-    top: 50%;
-    right: 50%;
-  }
-
-  #menu-acc {
-    position: fixed;
-    width: 40px;
-    z-index: 100;
-    left: 93%;
-    top: 93%;
-    transition: .2s;
-  }
-
-  #menu-acc img {
-    transition: 0.8s;
-  }
-
-  #menu-acc :hover {
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    transition: .4s;
-  }
-
-  #menu-acc img {
-    background-color: transparent 50%;
-    border-radius: 50%;
-  }
-
-}
-
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -460,16 +406,210 @@ footer {
   }
 
   .nav.responsive ul {
+    top: 49px;
     right: 0;
-    text-align: center;
   }
 
   .icon {
     display: block;
     color: var(--branco);
     position: absolute;
-    left: 90%;
-    top: 35%;
+    left: 93%;
+    top: 25%;
+    z-index: 20;
+    text-decoration: none;
+  }
+
+  .btn2 {
+    position: relative;
+    left: 87%;
+  }
+
+  .nav ul li {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .nav ul li a {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  #menu-acc {
+    position: fixed;
+    z-index: 100;
+    left: 91%;
+    top: 92%;
+    transition: .2s;
+  }
+
+  #menu-acc img {
+    transition: 0.8s;
+    background-color: transparent 50%;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+  }
+
+  #menu-acc :hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: .4s;
+  }
+
+  #caixaAcessibilidade{
+    left: 610px;
+    top: 80%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .cabecalhoAcessibilidade h4 {
+    font-size: 0.8rem;
+  }
+
+  .cabecalhoAcessibilidade .fechar{
+    bottom: 120px;
+    left: 115px;
+    font-size: 15px;
+  }
+
+  #caixaAcessibilidade button:not(#theme-toggle){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  #caixaAcessibilidade #theme-toggle{
+    width: 70px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 100%;
+    left: auto;
+    width: 100vw;
+    background: #2e7d32;
+    transition: right 0.3s;
+    padding: 15px 0;
+    z-index: 10;
+  }
+
+  .nav.responsive ul {
+    top: 50px;
+    right: 0;
+  }
+
+  .icon {
+    display: block;
+    color: var(--branco);
+    position: absolute;
+    left: 93%;
+    top: 25%;
+    z-index: 20;
+    text-decoration: none;
+  }
+
+  .btn2 {
+    position: relative;
+    left: 24%;
+  }
+
+  .nav ul li {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .nav ul li a {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  #menu-acc {
+    position: fixed;
+    z-index: 100;
+    left: 89%;
+    top: 92%;
+    transition: .2s;
+  }
+
+  #menu-acc img {
+    transition: 0.8s;
+    background-color: transparent 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  #menu-acc :hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: .4s;
+  }
+
+  #caixaAcessibilidade{
+    left: 285px;
+    top: 77%;
+    width: 130px;
+    height: 130px;
+  }
+
+  .cabecalhoAcessibilidade h4 {
+    font-size: 0.8rem;
+  }
+
+  .cabecalhoAcessibilidade .fechar{
+    bottom: 105px;
+    left: 100px;
+    font-size: 15px;
+  }
+
+  #caixaAcessibilidade button:not(#theme-toggle){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+
+  #caixaAcessibilidade #theme-toggle{
+    width: 60px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 100%;
+    left: auto;
+    width: 100vw;
+    background: #2e7d32;
+    transition: right 0.3s;
+    padding: 15px 0;
+    z-index: 10;
+  }
+
+  .nav.responsive ul {
+    top: 50px;
+    right: 0;
+  }
+
+  .icon {
+    display: block;
+    color: var(--branco);
+    position: absolute;
+    left: 93%;
+    top: 25%;
     z-index: 20;
     text-decoration: none;
   }
@@ -487,90 +627,22 @@ footer {
   .nav ul li a {
     width: 90%;
     margin: 5px auto;
-    text-align: center;
   }
 
   #menu-acc {
     position: fixed;
-    width: 40px;
-    z-index: 100;
-    left: 90%;
-    top: 93%;
-    transition: .2s;
-  }
-
-  #menu-acc img {
-    transition: 0.8s;
-  }
-
-  #menu-acc :hover {
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    transition: .4s;
-  }
-
-  #menu-acc img {
-    background-color: transparent 50%;
-    border-radius: 50%;
-  }
-
-}
-
-@media (max-width: 376px) {
-  .nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 10px;
-    right: 100%;
-    left: auto;
-    width: 100vw;
-    background: #2e7d32;
-    transition: right 0.3s;
-    padding: 15px 0;
-    z-index: 10;
-  }
-
-  .nav.responsive ul {
-    right: 0;
-    text-align: center;
-  }
-
-  .icon {
-    display: block;
-    color: var(--branco);
-    position: absolute;
-    left: 93%;
-    top: 35%;
-    z-index: 20;
-    text-decoration: none;
-  }
-
-  .btn2 {
-    position: relative;
-    left: 10%;
-  }
-
-  .nav ul li {
-    text-align: right;
-    padding-right: 20px;
-  }
-
-  .nav ul li a {
-    width: 90%;
-    margin: 5px auto;
-    text-align: center;
-  }
-
-  #menu-acc {
-    position: fixed;
-    width: 40px;
     z-index: 100;
     left: 88%;
-    top: 93%;
+    top: 92%;
     transition: .2s;
   }
 
   #menu-acc img {
     transition: 0.8s;
+    background-color: transparent 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
   }
 
   #menu-acc :hover {
@@ -578,11 +650,36 @@ footer {
     transition: .4s;
   }
 
-  #menu-acc img {
-    background-color: transparent 50%;
-    border-radius: 50%;
+  #caixaAcessibilidade{
+    left: 235px;
+    top: 77%;
+    width: 130px;
+    height: 130px;
   }
 
+  .cabecalhoAcessibilidade h4 {
+    font-size: 0.8rem;
+  }
+
+  .cabecalhoAcessibilidade .fechar{
+    bottom: 105px;
+    left: 100px;
+    font-size: 15px;
+  }
+
+  #caixaAcessibilidade button:not(#theme-toggle){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+
+  #caixaAcessibilidade #theme-toggle{
+    width: 60px;
+    height: 70px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -600,8 +697,8 @@ footer {
   }
 
   .nav.responsive ul {
+    top: 50px;
     right: 0;
-    text-align: center;
   }
 
   .icon {
@@ -609,7 +706,7 @@ footer {
     color: var(--branco);
     position: absolute;
     left: 93%;
-    top: 35%;
+    top: 25%;
     z-index: 20;
     text-decoration: none;
   }
@@ -627,20 +724,22 @@ footer {
   .nav ul li a {
     width: 90%;
     margin: 5px auto;
-    text-align: center;
   }
 
   #menu-acc {
     position: fixed;
-    width: 40px;
     z-index: 100;
-    left: 88%;
-    top: 93%;
+    left: 85%;
+    top: 92%;
     transition: .2s;
   }
 
   #menu-acc img {
     transition: 0.8s;
+    background-color: transparent 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
   }
 
   #menu-acc :hover {
@@ -648,9 +747,34 @@ footer {
     transition: .4s;
   }
 
-  #menu-acc img {
-    background-color: transparent 50%;
-    border-radius: 50%;
+  #caixaAcessibilidade{
+    left: 180px;
+    top: 77%;
+    width: 130px;
+    height: 130px;
   }
 
-}
+  .cabecalhoAcessibilidade h4 {
+    font-size: 0.8rem;
+  }
+
+  .cabecalhoAcessibilidade .fechar{
+    bottom: 105px;
+    left: 100px;
+    font-size: 15px;
+  }
+
+  #caixaAcessibilidade button:not(#theme-toggle){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+
+  #caixaAcessibilidade #theme-toggle{
+    width: 60px;
+    height: 70px;
+  }
+} 
