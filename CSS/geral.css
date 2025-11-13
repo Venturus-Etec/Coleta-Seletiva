@@ -391,7 +391,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px){
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -488,7 +488,7 @@ footer {
   }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 767px){
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -585,7 +585,7 @@ footer {
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 424px){
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -616,7 +616,7 @@ footer {
 
   .btn2 {
     position: relative;
-    left: 15%;
+    left: 20%;
   }
 
   .nav ul li {
@@ -632,7 +632,7 @@ footer {
   #menu-acc {
     position: fixed;
     z-index: 100;
-    left: 88%;
+    left: 89%;
     top: 92%;
     transition: .2s;
   }
@@ -682,7 +682,7 @@ footer {
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 374px){
   .nav ul {
     flex-direction: column;
     position: absolute;

@@ -252,20 +252,23 @@
 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px){
   .cards {
-    display: flex;
-    gap: 12px;
-    width: 95%;
-    font-size: 0.9rem;
-    align-items: center;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px; 
+  width: 95%;
+  max-width: 900px;
+  margin: 0 auto; 
+  font-size: 0.9rem;
+  justify-items: center;
+  margin: 10px;
   }
 
   .card {
-    width: 30%;
+    width: 60%;
     max-width: 350px;
-    margin-bottom: 20px;
   }
 
   .home, .carrosel-home {
@@ -288,7 +291,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 767px){
   .cards {
     display: flex;
     gap: 12px;
@@ -328,7 +331,7 @@
 
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 424px){
   .cards {
     display: flex;
     gap: 12px;
@@ -368,7 +371,7 @@
 
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 374px){
   .cards {
     display: flex;
     gap: 12px;
@@ -393,7 +396,7 @@
   #carrosel h1{
     margin-top: 18px;
     left: 70px;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   #carrosel p{
