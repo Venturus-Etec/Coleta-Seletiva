@@ -28,7 +28,7 @@
 }
 
 .Infos {
-  color: #ffffff;
+  color: var(--text);
 }
 
 .popup-container2 {
