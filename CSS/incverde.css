@@ -38,8 +38,8 @@
 }
 
 #imgincentivo {
-  width: 100%;
-  height: 85vh;
+  width: 88%;
+  height: 80vh;
   display: block;
   margin: auto;
   border-radius: 15px;
@@ -108,7 +108,7 @@
 }
 
 .front1 {
-  background: var(--background);
+  background: var(--verdeClaro);
   color: var(--text);
   display: flex;
   flex-direction: column;
