@@ -608,7 +608,7 @@ footer {
     display: block;
     color: var(--branco);
     position: absolute;
-    left: 95%;
+    left: 93%;
     top: 25%;
     z-index: 20;
     text-decoration: none;
@@ -616,7 +616,7 @@ footer {
 
   .btn2 {
     position: relative;
-    left: 20%;
+    left: 18%;
   }
 
   .nav ul li {
@@ -705,7 +705,7 @@ footer {
     display: block;
     color: var(--branco);
     position: absolute;
-    left: 93%;
+    left: 91%;
     top: 25%;
     z-index: 20;
     text-decoration: none;
@@ -713,7 +713,7 @@ footer {
 
   .btn2 {
     position: relative;
-    left: 5%;
+    left: 2%;
   }
 
   .nav ul li {
