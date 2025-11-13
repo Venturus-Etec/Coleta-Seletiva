@@ -132,12 +132,93 @@
   background-color: #1b5e20;
 }
 
-@media (max-width: 1025px) {}
+@media (min-width: 768px) and (max-width: 1023px){
+  #bola {
+    font-size: 26px;
+  }
 
-@media (max-width: 781px) {}
+  #T {
+    font-size: 16px;
+  }
 
-@media (max-width: 426px) {}
+  #email,
+  #insta,
+  #venturus {
+    height: 65px;
+    width: 65px;
+  }
 
-@media (max-width: 376px) {}
+  .form {
+    padding: 35px 50px;
+    max-width: 80%;
+  }
 
-@media (max-width: 320px) {}
+  #btt {
+    width: 140px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px){
+  #bola {
+    font-size: 22px;
+  }
+
+  #T {
+    font-size: 15px;
+  }
+
+  #email,
+  #insta,
+  #venturus {
+    height: 55px;
+    width: 55px;
+  }
+
+  .form {
+    padding: 25px 30px;
+    max-width: 90%;
+  }
+
+  .form h1 {
+    font-size: 1.6rem;
+  }
+
+  #btt {
+    width: 120px;
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 374px){
+  #bola {
+    font-size: 20px;
+  }
+
+  #T {
+    font-size: 14px;
+  }
+
+  #email,
+  #insta,
+  #venturus {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+  }
+
+  .form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .form h1 {
+    font-size: 1.4rem;
+  }
+
+  #btt {
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+  }
+}

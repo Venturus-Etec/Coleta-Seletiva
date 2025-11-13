@@ -92,12 +92,27 @@
   margin-right: auto;
 }
 
-@media (max-width: 1025px) {}
+@media (max-width: 1024px) {
+  .sobre {
+    display: flex;               
+    flex-direction: column;      
+    justify-content: center;    
+    align-items: center;         
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--verdeClaro);
+    color: var(--text);
+    width: 100%;               
+    box-sizing: border-box;      
+  }
 
-@media (max-width: 781px) {}
+  .sobre h1 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+  }
 
-@media (max-width: 426px) {}
-
-@media (max-width: 376px) {}
-
-@media (max-width: 320px) {}
+  .sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

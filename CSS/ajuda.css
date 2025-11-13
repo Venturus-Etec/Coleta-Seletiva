@@ -263,73 +263,157 @@ details p {
   text-align: center;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .tabela {
-    width: 100%;
-    overflow-x: auto;
+    width: 100%;             
+    margin: 0 auto;
+    overflow-x: auto;       
     -webkit-overflow-scrolling: touch;
-    color: var(--text);
   }
 
-  table {
-    width: 100%;
+  .tabela table {
+    width: 100%;             
+    max-width: 100%;         
+    border: 2px solid #1d723a;
     border-collapse: collapse;
-    min-width: 400px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    table-layout: auto;      
+  }
+
+  .tabela th,
+  .tabela td {
+    border: 1px solid #1b5e20;
+    padding: 6px;
+    word-break: break-word;
+  }
+
+  .tabela th {
+    background-color: #2e7d32;
+    color: white;
   }
 }
 
-@media (max-width: 781px) {
+@media (min-width: 768px) and (max-width: 1023){
   .tabela {
-    width: 100%;
-    overflow-x: auto;
+    width: 100%;             
+    margin: 0 auto;
+    overflow-x: auto;       
     -webkit-overflow-scrolling: touch;
   }
 
-  table {
-    width: 100%;
+  .tabela table {
+    width: 100%;             
+    max-width: 100%;         
+    border: 2px solid #1d723a;
     border-collapse: collapse;
-    min-width: 400px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    table-layout: auto;      
+  }
+
+  .tabela th,
+  .tabela td {
+    border: 1px solid #1b5e20;
+    padding: 6px;
+    word-break: break-word;
+  }
+
+  .tabela th {
+    background-color: #2e7d32;
+    color: white;
   }
 }
 
-@media (max-width: 426px) {
+@media (min-width: 425px) and (max-width: 767){
   .tabela {
-    width: 100%;
-    overflow-x: auto;
+    width: 100%;             
+    margin: 0 auto;
+    overflow-x: auto;       
     -webkit-overflow-scrolling: touch;
   }
 
-  table {
-    width: 50%;
+  .tabela table {
+    width: 100%;             
+    max-width: 100%;         
+    border: 2px solid #1d723a;
     border-collapse: collapse;
-    min-width: 400px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    table-layout: auto;      
+  }
+
+  .tabela th,
+  .tabela td {
+    border: 1px solid #1b5e20;
+    padding: 6px;
+    word-break: break-word;
+  }
+
+  .tabela th {
+    background-color: #2e7d32;
+    color: white;
   }
 }
 
-@media (max-width: 376px) {
+@media (min-width: 375px) and (max-width: 424){
   .tabela {
-    width: 100%;
-    overflow-x: auto;
+    width: 100%;             
+    margin: 0 auto;
+    overflow-x: auto;       
     -webkit-overflow-scrolling: touch;
   }
 
-  table {
-    width: 50%;
+  .tabela table {
+    width: 100%;             
+    max-width: 100%;         
+    border: 2px solid #1d723a;
     border-collapse: collapse;
-    min-width: 400px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    table-layout: auto;      
+  }
+
+  .tabela th,
+  .tabela td {
+    border: 1px solid #1b5e20;
+    padding: 6px;
+    word-break: break-word;
+  }
+
+  .tabela th {
+    background-color: #2e7d32;
+    color: white;
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 374px) {
   .tabela {
-    width: 100%;
-    overflow-x: auto;
+    width: 100%;             
+    margin: 0 auto;
+    overflow-x: auto;       
     -webkit-overflow-scrolling: touch;
   }
 
-  table {
-    width: 50%;
+  .tabela table {
+    width: 100%;             
+    max-width: 100%;         
+    border: 2px solid #1d723a;
     border-collapse: collapse;
-    min-width: 400px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    table-layout: auto;      
+  }
+
+  .tabela th,
+  .tabela td {
+    border: 1px solid #1b5e20;
+    padding: 6px;
+    word-break: break-word;
+  }
+
+  .tabela th {
+    background-color: #2e7d32;
+    color: white;
   }
 }
