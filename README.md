@@ -30,9 +30,9 @@ Adicionalmente, o projeto busca consolidar uma cultura de responsabilidade socio
 ---
 
 ## Integrantes do grupo e suas funções
-- *Lucas Henrique Rodrigues Camargo* → CSS e HTML  
-- *Maria Fernanda Kondo Delpino* → HTML e CSS  
-- *Matheus Henrique Pereira Souza* → JavaScript
+- *Lucas Henrique Rodrigues Camargo* → CSS e HTML e JavaScript
+- *Maria Fernanda Kondo Delpino* → HTML  
+- *Matheus Henrique Pereira Souza* → CSS e HTML Python e JavaScript
 - *Otávio Henrique Alves da Costa* → Gerador de Imagens  
 
 ---
